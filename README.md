@@ -10,12 +10,20 @@
 
 ## 🧪 关于我
 
-| |
-| :-- |
-| **🔭 正在做**<br>一套可复用的接口自动化框架，把回归测试从「跑一晚上」压缩到「跑一杯咖啡」 |
-| **🌱 正在学**<br>Playwright 端到端测试、性能压测与火焰图 |
-| **🧠 喜欢聊**<br>测试用例设计、缺陷根因定位、CI 流水线里的质量门禁 |
-| **📫 找到我**<br>your-email@example.com |
+<table>
+  <tr>
+    <td><strong>🔭 正在做</strong><br>一套可复用的接口自动化框架，把回归测试从「跑一晚上」压缩到「跑一杯咖啡」</td>
+  </tr>
+  <tr>
+    <td><strong>🌱 正在学</strong><br>Playwright 端到端测试、性能压测与火焰图</td>
+  </tr>
+  <tr>
+    <td><strong>🧠 喜欢聊</strong><br>测试用例设计、缺陷根因定位、CI 流水线里的质量门禁</td>
+  </tr>
+  <tr>
+    <td><strong>📫 找到我</strong><br>your-email@example.com</td>
+  </tr>
+</table>
 
 ## 🛠️ 技术栈
 
@@ -23,13 +31,7 @@
 
 <img src="https://skillicons.dev/icons?i=docker,git,github,githubactions,jenkins,vscode,idea,nginx&theme=dark" alt="tools" />
 
-<img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white" alt="Selenium" />
-<img src="https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="Pytest" />
-<img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" />
-<img src="https://img.shields.io/badge/Apache%20JMeter-D22128?style=for-the-badge&logo=apachejmeter&logoColor=white" alt="JMeter" />
-<img src="https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white" alt="Playwright" />
-<img src="https://img.shields.io/badge/Cypress-69D3A7?style=for-the-badge&logo=cypress&logoColor=17202C" alt="Cypress" />
-<img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white" alt="Jira" />
+<img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white" alt="Selenium" /> <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="Pytest" /> <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" /> <img src="https://img.shields.io/badge/Apache%20JMeter-D22128?style=for-the-badge&logo=apachejmeter&logoColor=white" alt="JMeter" /> <img src="https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white" alt="Playwright" /> <img src="https://img.shields.io/badge/Cypress-69D3A7?style=for-the-badge&logo=cypress&logoColor=17202C" alt="Cypress" /> <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white" alt="Jira" />
 
 ## 🎧 最近在听
 
