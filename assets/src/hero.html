@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<!--
+  改字就改这里：
+    · 名字      → 搜 name-stroke / name-fill 里的 KI（两处都要改）
+    · 副标题    → 搜 SOFTWARE QA ENGINEER
+    · 胶囊文字  → 搜 今天也在努力抓 Bug
+    · 右下签名  → 搜 made with
+  改完运行同目录的 build.ps1，会重新生成 ../hero.png
+-->
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    width: 1280px; height: 360px;
+    background: transparent;
+    overflow: hidden;
+    font-family: 'Microsoft YaHei', 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .panel {
+    position: absolute; left: 16px; top: 16px;
+    width: 1244px; height: 324px;
+    border-radius: 42px;
+    background: linear-gradient(135deg, #FFFAF4 0%, #FFF4F2 55%, #FFE9F0 100%);
+    border: 2px solid #F5D3DA;
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(176, 108, 128, 0.26);
+  }
+  .stitch {
+    position: absolute; left: 16px; top: 16px;
+    width: 1208px; height: 288px;
+    border-radius: 32px;
+    border: 2px dashed #F8C9D4;
+    opacity: 0.8; box-sizing: border-box;
+  }
+
+  /* ---------- 角色：统一以“可见底部”贴齐 ---------- */
+  .char {
+    position: absolute; bottom: 79px;
+    object-fit: contain; object-position: center bottom;
+    filter: drop-shadow(0 8px 12px rgba(150, 96, 108, 0.22));
+  }
+  .ground {
+    position: absolute; top: 274px; height: 16px; border-radius: 50%;
+    background: radial-gradient(ellipse at center, rgba(200,140,155,.40), rgba(200,140,155,0) 72%);
+  }
+
+  /* ---------- 文字块 ---------- */
+  .namewrap {
+    position: absolute; left: 610px; top: 88px;
+    font-family: 'Comic Sans MS', 'Microsoft YaHei', sans-serif;
+    font-size: 108px; font-weight: 700; line-height: 1;
+    letter-spacing: 1px;
+  }
+  .name-stroke {
+    position: absolute; left: 0; top: 0;
+    color: #ffffff;
+    -webkit-text-stroke: 15px #ffffff;
+  }
+  .name-fill {
+    position: relative;
+    -webkit-text-stroke: 3px #7A5B5B;
+    background: linear-gradient(92deg, #FF8FA3 0%, #FFA45C 55%, #FFC85C 100%);
+    -webkit-background-clip: text; background-clip: text;
+    color: transparent;
+  }
+
+  .subtitle {
+    position: absolute; left: 610px; top: 202px;
+    font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+    font-size: 14px; font-weight: 600; letter-spacing: 6.5px;
+    color: #9C7476;
+  }
+
+  .pill {
+    position: absolute; left: 612px; top: 232px;
+    height: 46px; padding: 0 24px;
+    display: inline-flex; align-items: center;
+    border-radius: 23px;
+    background: rgba(255,255,255,.92);
+    border: 2px solid #F3CBD4;
+    box-sizing: border-box;
+  }
+  .pill span {
+    font-size: 16.5px; font-weight: 600; color: #7A5B5B;
+    letter-spacing: .5px; line-height: 1;
+  }
+  .ico { display: inline-block; vertical-align: -2px; }
+
+  .sign {
+    position: absolute; right: 58px; bottom: 34px;
+    font-family: 'Segoe Script', 'Ink Free', 'Bradley Hand', 'Chalkboard SE', cursive;
+    font-size: 23px; color: #BE8891; letter-spacing: .5px;
+    white-space: nowrap;
+    transform: rotate(-2deg); transform-origin: right bottom;
+  }
+
+  .dot { position: absolute; border-radius: 50%; background: #F3C4CE; }
+</style>
+</head>
+<body>
+
+  <div class="panel"></div>
+  <div class="stitch"></div>
+
+  <!-- 背景小圆点 -->
+  <div class="dot" style="left:626px;top:68px;width:8px;height:8px;opacity:.5"></div>
+  <div class="dot" style="left:1120px;top:92px;width:9px;height:9px;opacity:.45"></div>
+  <div class="dot" style="left:1190px;top:296px;width:7px;height:7px;opacity:.5"></div>
+  <div class="dot" style="left:700px;top:312px;width:8px;height:8px;opacity:.4"></div>
+  <div class="dot" style="left:560px;top:112px;width:6px;height:6px;opacity:.45"></div>
+
+  <!-- 爱心 -->
+  <svg style="position:absolute;left:972px;top:214px;width:40px;height:36px" viewBox="0 0 44 40">
+    <path d="M22 37C8 27 -2 19 4 10c4-6 12-5 18 2 6-7 14-8 18-2 6 9-4 17-18 27z" fill="#FF9DAE" opacity=".72"/>
+  </svg>
+  <svg style="position:absolute;left:1054px;top:146px;width:23px;height:21px" viewBox="0 0 44 40">
+    <path d="M22 37C8 27 -2 19 4 10c4-6 12-5 18 2 6-7 14-8 18-2 6 9-4 17-18 27z" fill="#FF9DAE" opacity=".58"/>
+  </svg>
+
+  <!-- 星星 -->
+  <svg style="position:absolute;left:1188px;top:62px;width:24px;height:24px" viewBox="0 0 24 24">
+    <path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z" fill="#FFD36B"/>
+  </svg>
+  <svg style="position:absolute;left:1044px;top:70px;width:17px;height:17px" viewBox="0 0 24 24">
+    <path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z" fill="#FFD36B" opacity=".8"/>
+  </svg>
+
+  <!-- 地面阴影 -->
+  <div class="ground" style="left:70px;width:170px"></div>
+  <div class="ground" style="left:222px;width:200px"></div>
+  <div class="ground" style="left:404px;width:180px"></div>
+
+  <!-- 角色：哈奇猫 → 吉伊 → 兔兔（按可见底部对齐） -->
+  <img class="char" src="c-hachi.png" style="left:78px;width:176px;height:158px">
+  <img class="char" src="c-usagi.png" style="left:410px;width:179px;height:180px">
+  <img class="char" src="c-chii.png"  style="left:226px;width:210px;height:176px">
+
+  <!-- 文字 -->
+  <div class="namewrap">
+    <span class="name-stroke">KI</span>
+    <span class="name-fill">KI</span>
+  </div>
+  <div class="subtitle">SOFTWARE QA ENGINEER</div>
+
+  <div class="pill">
+    <span>今天也在努力抓 Bug</span>
+    <svg class="ico" style="width:13px;height:13px;margin-left:7px" viewBox="0 0 24 24">
+      <path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z" fill="#FFB3C1"/>
+    </svg>
+  </div>
+
+  <div class="sign">Having Fun Is Winning</div>
+
+</body>
+</html>
