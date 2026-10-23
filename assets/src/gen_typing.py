@@ -114,12 +114,32 @@ def build_model(cfg):
 
 
 def char_window(i, n, appear, hold, dissolve, slot, line_start):
-    """第 i 个字：出现窗口 / 消散窗口（绝对秒）"""
+    """第 i 个字：出现窗口 / 消散窗口（绝对秒），保证不越过这一句的时间槽"""
     a0 = line_start + (i / n) * appear
     a1 = a0 + max(0.08, appear * 0.55)
-    d0 = line_start + appear + hold + (i / n) * dissolve
-    d1 = d0 + max(0.10, dissolve * 0.5)
+    tw = max(0.12, slot - appear - hold)          # 整句可用的消散时长
+    d0 = line_start + appear + hold + (i / n) * (tw * 0.7)
+    d1 = min(d0 + max(0.10, tw * 0.3), line_start + slot - 0.002)
+    if d1 <= d0:
+        d1 = d0 + 0.02
     return a0, a1, d0, d1
+
+
+def _times(vals):
+    """把时间点整理成「严格递增 + 首 0 尾 1」，否则浏览器会整条动画丢掉"""
+    eps = 0.0009
+    n = len(vals)
+    t, prev = [], 0.0
+    for i, v in enumerate(vals):
+        room = 1.0 - eps * (n - 1 - i)
+        v = min(max(v, prev + (eps if i else 0.0)), room)
+        t.append(v)
+        prev = v
+    t[-1] = 1.0
+    for i in range(n - 2, -1, -1):
+        if t[i] > t[i + 1] - eps:
+            t[i] = t[i + 1] - eps
+    return [max(0.0, x) for x in t]
 
 
 def emit_animated(m):
@@ -135,33 +155,39 @@ def emit_animated(m):
                 continue
             a0, a1, d0, d1 = char_window(i, line["n"], m["appear"], m["hold"],
                                         m["dissolve"], m["slot"], ls)
-            kt = "0;%.5f;%.5f;%.5f;%.5f;1" % (a0 / cycle, a1 / cycle, d0 / cycle, d1 / cycle)
+            kt = ";".join("%.5f" % x for x in _times([0, a0 / cycle, a1 / cycle,
+                                                      d0 / cycle, d1 / cycle, 1]))
             # opacity 属性是「不支持动画时」的兜底：只显示第一句
             chars.append(
-                '<path d="%s" fill="%s" filter="url(#glow)" opacity="%d">'
+                '<path d="%s" fill="%s" opacity="%d">'
                 '<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="%s" '
                 'dur="%.3fs" repeatCount="indefinite"/></path>' % (
                     d, color, 1 if li == 0 else 0, kt, cycle))
-        out.append('<g transform="translate(%.2f,%.2f)">%s</g>' % (
+        out.append('<g transform="translate(%.2f,%.2f)" filter="url(#glow)">%s</g>' % (
             line["ox"], line["oy"], "".join(chars)))
         for p in line["parts"]:
             i = p["gi"]
             a0, a1, d0, d1 = char_window(i, line["n"], m["appear"], m["hold"],
                                         m["dissolve"], m["slot"], ls)
-            s = (d0 + p["delay"]) / cycle
-            e = (d0 + p["delay"] + p["life"]) / cycle
+            s = d0 + p["delay"]
+            e = min(s + p["life"], ls + m["slot"] - 0.003)
+            if e <= s:
+                e = s + 0.02
+            s, e = s / cycle, e / cycle
             pk = s + (e - s) * 0.28
+            kot = ";".join("%.5f" % x for x in _times([0, s, pk, e, 1]))
+            ktr = ";".join("%.5f" % x for x in _times([0, s, e, 1]))
+            # opacity="0" 兜底：任何动画异常都只会「不显示」，不会卡成白点
             out.append(
-                '<circle cx="%.2f" cy="%.2f" r="%.2f" fill="%s">'
+                '<circle cx="%.2f" cy="%.2f" r="%.2f" fill="%s" opacity="0">'
                 '<animate attributeName="opacity" values="0;0;0.95;0;0" '
-                'keyTimes="0;%.5f;%.5f;%.5f;1" dur="%.3fs" repeatCount="indefinite"/>'
+                'keyTimes="%s" dur="%.3fs" repeatCount="indefinite"/>'
                 '<animateTransform attributeName="transform" type="translate" '
-                'values="0 0;0 0;%.1f %.1f;%.1f %.1f" keyTimes="0;%.5f;%.5f;1" '
+                'values="0 0;0 0;%.1f %.1f;%.1f %.1f" keyTimes="%s" '
                 'dur="%.3fs" repeatCount="indefinite"/></circle>' % (
-                    p["cx"], p["cy"], p["r"], pcolor,
-                    s, pk, e, cycle,
+                    p["cx"], p["cy"], p["r"], pcolor, kot, cycle,
                     p["drift"] * .4, -p["rise"] * .4, p["drift"], -p["rise"],
-                    s, e, cycle))
+                    ktr, cycle))
     return _wrap(m, "".join(out))
 
 
@@ -191,9 +217,9 @@ def emit_snapshot(m, t):
                 op = 0.0
             if op <= 0.01:
                 continue
-            chars.append('<path d="%s" fill="%s" filter="url(#glow)" opacity="%.3f"/>' % (d, color, op))
+            chars.append('<path d="%s" fill="%s" opacity="%.3f"/>' % (d, color, op))
         if chars:
-            out.append('<g transform="translate(%.2f,%.2f)">%s</g>' % (
+            out.append('<g transform="translate(%.2f,%.2f)" filter="url(#glow)">%s</g>' % (
                 line["ox"], line["oy"], "".join(chars)))
         for p in line["parts"]:
             a0, a1, d0, d1 = char_window(p["gi"], line["n"], m["appear"], m["hold"],

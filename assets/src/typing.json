@@ -18,6 +18,6 @@
   "hold": 1.6,
   "dissolve": 0.6,
   "particle_size": 1.6,
-  "max_particles": 90,
+  "max_particles": 60,
   "seed": 11
 }
