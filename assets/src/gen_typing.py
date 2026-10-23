@@ -135,11 +135,11 @@ def emit_animated(m):
                 continue
             a0, a1, d0, d1 = char_window(i, line["n"], m["appear"], m["hold"],
                                         m["dissolve"], m["slot"], ls)
-            kt = "%.5f;%.5f;%.5f;%.5f" % (a0 / cycle, a1 / cycle, d0 / cycle, d1 / cycle)
+            kt = "0;%.5f;%.5f;%.5f;%.5f;1" % (a0 / cycle, a1 / cycle, d0 / cycle, d1 / cycle)
             # opacity 属性是「不支持动画时」的兜底：只显示第一句
             chars.append(
                 '<path d="%s" fill="%s" filter="url(#glow)" opacity="%d">'
-                '<animate attributeName="opacity" values="0;1;1;0" keyTimes="%s" '
+                '<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="%s" '
                 'dur="%.3fs" repeatCount="indefinite"/></path>' % (
                     d, color, 1 if li == 0 else 0, kt, cycle))
         out.append('<g transform="translate(%.2f,%.2f)">%s</g>' % (

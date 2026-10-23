@@ -40,7 +40,7 @@
 <table align="center">
   <tr>
     <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1a/5c/e9/1a5ce93c-aef4-6667-b7d1-7162203e1c39/190295229993.jpg/600x600bb.jpg" width="104" height="104" alt="party 4 u"><br><b><a href="https://music.apple.com/us/album/party-4-u/1513162098?i=1513162746">party 4 u</a></b><br>Charli xcx</td>
-    <td align="center"><img src="./assets/covers/what-a-night.png" width="104" height="104" alt="What a Night"><br><b>What a Night</b><br>Kim Petras</td>
+    <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e7/ef/f6/e7eff66e-a91f-768e-6bb2-ab1ee29accb6/885288403442.jpg/600x600bb.jpg" width="104" height="104" alt="What a Night"><br><b><a href="https://music.apple.com/gb/album/what-a-night/6805970041?i=6805970989">What a Night</a></b><br>Kim Petras</td>
     <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c0/d9/d5/c0d9d5fb-287c-0c0e-671c-14b66dd6fcff/850064074956.jpg/600x600bb.jpg" width="104" height="104" alt="choke enough"><br><b><a href="https://music.apple.com/us/album/choke-enough/6780691795?i=6780692090">choke enough</a></b><br>Oklou</td>
     <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/53/c6/9a/53c69a6a-d1c4-0983-a20c-a67dceae554f/26UMGIM82372.rgb.jpg/600x600bb.jpg" width="104" height="104" alt="Ain't In LA"><br><b><a href="https://music.apple.com/us/album/aint-in-la/6807192580?i=6807192838">Ain't In LA</a></b><br>ADÉLA</td>
   </tr>
@@ -71,7 +71,7 @@
 
 <div align="center">
 
-<i>「测试不是找茬，是替用户先走一遍他可能走错的路。」</i>
+<i>「认真地对待每一天，以此回应那些爱我们的人，也以此回应那些伤害我们的人」</i>
 
 <br/><br/>
 
