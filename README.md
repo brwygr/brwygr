@@ -37,7 +37,7 @@
 
 <div align="center">
 
-<table>
+<table align="center">
   <tr>
     <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1a/5c/e9/1a5ce93c-aef4-6667-b7d1-7162203e1c39/190295229993.jpg/600x600bb.jpg" width="104" height="104" alt="party 4 u"><br><b><a href="https://music.apple.com/us/album/party-4-u/1513162098?i=1513162746">party 4 u</a></b><br>Charli xcx</td>
     <td align="center"><img src="./assets/covers/what-a-night.png" width="104" height="104" alt="What a Night"><br><b>What a Night</b><br>Kim Petras</td>
