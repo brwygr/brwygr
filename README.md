@@ -12,16 +12,16 @@
 
 <table>
   <tr>
-    <td><strong>🔭 正在做</strong><br>一套可复用的接口自动化框架，把回归测试从「跑一晚上」压缩到「跑一杯咖啡」</td>
+    <td><strong>🔭 正在做</strong><br>可复用的自动化框架，把回归测试从「跑一晚上」压缩到「跑一杯咖啡」</td>
   </tr>
   <tr>
-    <td><strong>🌱 正在学</strong><br>Playwright 端到端测试、性能压测与火焰图</td>
+    <td><strong>🌱 正在学</strong><br>Playwright 端到端测试、性能压测</td>
   </tr>
   <tr>
-    <td><strong>🧠 喜欢聊</strong><br>测试用例设计、缺陷根因定位、CI 流水线里的质量门禁</td>
+    <td><strong>🧠 喜欢聊</strong><br>缺陷定位、CI 流水线里的质量门禁、音乐、影视作品</td>
   </tr>
   <tr>
-    <td><strong>📫 找到我</strong><br>your-email@example.com</td>
+    <td><strong>📫 找到我</strong><br>你已经找到我了</td>
   </tr>
 </table>
 
@@ -33,7 +33,7 @@
 
 <img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white" alt="Selenium" /> <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="Pytest" /> <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" /> <img src="https://img.shields.io/badge/Apache%20JMeter-D22128?style=for-the-badge&logo=apachejmeter&logoColor=white" alt="JMeter" /> <img src="https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white" alt="Playwright" /> <img src="https://img.shields.io/badge/Cypress-69D3A7?style=for-the-badge&logo=cypress&logoColor=17202C" alt="Cypress" /> <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white" alt="Jira" />
 
-## 🎧 最近在听
+## 🎧 How i'm feeling now
 
 <div align="center">
 
@@ -59,7 +59,7 @@
 
 </div>
 
-## 🐍 贡献贪吃蛇
+## 🐍 一只贪吃蛇
 
 <div align="center">
 
