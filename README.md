@@ -46,20 +46,21 @@ motto:  保持怀疑，持续验证
 
 ## 🎧 最近在听
 
-<i>手写歌单，不是实时同步 —— 想换歌的时候直接改这张表就行。</i>
+<i>手写歌单，不是实时同步 —— 想换歌直接改这张表就行。</i>
 
-| # | 歌曲 | 歌手 | 什么时候听 |
-| :-: | :--- | :--- | :--- |
-| 01 | **歌名 一** | 歌手 | 写用例时的 BGM |
-| 02 | **歌名 二** | 歌手 | 卡在 Bug 上就循环它 |
-| 03 | **歌名 三** | 歌手 | 下班路上的单曲 |
-| 04 | **歌名 四** | 歌手 | 单纯好听 |
+| 封面 | 歌曲 | 什么时候听 |
+| :-: | :--- | :--- |
+| <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/86/b0/9d/86b09d63-367a-563a-1e24-d5d62c220ac8/jacket_SRCL09749B00Z_550.jpg/600x600bb.jpg" width="56" height="56" alt="Lemon" /> | **[Lemon](https://open.spotify.com/search/Lemon%20%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB)**<br>米津玄師 | 写用例时的 BGM |
+| <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3a/17/eb/3a17eb30-eacb-82eb-51df-d1321dbb55bc/197188492205.jpg/600x600bb.jpg" width="56" height="56" alt="アイドル" /> | **[アイドル](https://open.spotify.com/search/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%20YOASOBI)**<br>YOASOBI | 卡在 Bug 上就循环它 |
+| <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/45/8a/e4/458ae484-dc8b-5683-ce04-8d2948346462/JAY.jpg/600x600bb.jpg" width="56" height="56" alt="晴天" /> | **[晴天](https://open.spotify.com/search/%E6%99%B4%E5%A4%A9%20%E5%91%A8%E6%9D%B0%E4%BC%A6)**<br>周杰伦 | 下班路上的单曲 |
+| <img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e3/e5/7a/e3e57a00-ed2d-69d6-bf00-347d7c37f3bd/PA00074572_0_90261_jacket.jpg/600x600bb.jpg" width="56" height="56" alt="ただ君に晴れ" /> | **[ただ君に晴れ](https://open.spotify.com/search/%E3%81%9F%E3%81%A0%E5%90%9B%E3%81%AB%E6%99%B4%E3%82%8C%20%E3%83%A8%E3%83%AB%E3%82%B7%E3%82%AB)**<br>ヨルシカ | 单纯好听 |
 
-<!-- 歌单怎么改：
-     1. 把「歌名 X / 歌手」换成你常听的歌；
-     2. 想加歌就在表格末尾复制一整行：| 05 | **歌名** | 歌手 | 一句话 |；
-     3. 只留 3 首就删掉多余的行；
-     4. 想给歌名加链接，写成 [**歌名**](https://open.spotify.com/track/xxxx) 即可。 -->
+<!-- 歌单怎么改（都是改文字，不联网、不过期）：
+     1. 换歌：改 **[歌名](链接)** 和 <br> 后面的歌手名；
+     2. 换封面：把 <img src="..."> 里的链接换成新封面图，宽高已经固定 56；
+        懒得找图就把歌名告诉我，我搜好封面写进去；
+     3. 加歌：复制一整行粘在最后；删歌：删掉整行；
+     4. 不想要封面：把那一格留空写成 | | 即可，表格不会塌。 -->
 
 ## 📌 精选项目
 
