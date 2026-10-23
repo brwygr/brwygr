@@ -35,14 +35,18 @@
 
 ## 🎧 最近在听
 
+<div align="center">
+
 <table>
   <tr>
-    <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/86/b0/9d/86b09d63-367a-563a-1e24-d5d62c220ac8/jacket_SRCL09749B00Z_550.jpg/600x600bb.jpg" width="104" height="104" alt="Lemon"><br><b><a href="https://music.apple.com/jp/album/lemon/1537460610?i=1537460612">Lemon</a></b><br>米津玄師</td>
-    <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3a/17/eb/3a17eb30-eacb-82eb-51df-d1321dbb55bc/197188492205.jpg/600x600bb.jpg" width="104" height="104" alt="アイドル"><br><b><a href="https://music.apple.com/jp/album/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB/1679278166?i=1679278167">アイドル</a></b><br>YOASOBI</td>
-    <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/45/8a/e4/458ae484-dc8b-5683-ce04-8d2948346462/JAY.jpg/600x600bb.jpg" width="104" height="104" alt="晴天"><br><b><a href="https://music.apple.com/jp/album/%E6%99%B4%E5%A4%A9/1721464893?i=1721464906">晴天</a></b><br>周杰伦</td>
-    <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e3/e5/7a/e3e57a00-ed2d-69d6-bf00-347d7c37f3bd/PA00074572_0_90261_jacket.jpg/600x600bb.jpg" width="104" height="104" alt="ただ君に晴れ"><br><b><a href="https://music.apple.com/jp/album/%E3%81%9F%E3%81%A0%E5%90%9B%E3%81%AB%E6%99%B4%E3%82%8C/1648875799?i=1648876333">ただ君に晴れ</a></b><br>ヨルシカ</td>
+    <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1a/5c/e9/1a5ce93c-aef4-6667-b7d1-7162203e1c39/190295229993.jpg/600x600bb.jpg" width="104" height="104" alt="party 4 u"><br><b><a href="https://music.apple.com/us/album/party-4-u/1513162098?i=1513162746">party 4 u</a></b><br>Charli xcx</td>
+    <td align="center"><img src="./assets/covers/what-a-night.png" width="104" height="104" alt="What a Night"><br><b>What a Night</b><br>Kim Petras</td>
+    <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c0/d9/d5/c0d9d5fb-287c-0c0e-671c-14b66dd6fcff/850064074956.jpg/600x600bb.jpg" width="104" height="104" alt="choke enough"><br><b><a href="https://music.apple.com/us/album/choke-enough/6780691795?i=6780692090">choke enough</a></b><br>Oklou</td>
+    <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/53/c6/9a/53c69a6a-d1c4-0983-a20c-a67dceae554f/26UMGIM82372.rgb.jpg/600x600bb.jpg" width="104" height="104" alt="Ain't In LA"><br><b><a href="https://music.apple.com/us/album/aint-in-la/6807192580?i=6807192838">Ain't In LA</a></b><br>ADÉLA</td>
   </tr>
 </table>
+
+</div>
 
 ## 📊 GitHub 数据
 

@@ -129,16 +129,21 @@ def emit_animated(m):
     out = []
     for li, line in enumerate(m["model"]):
         ls = li * m["slot"]
+        chars = []
         for i, d in enumerate(line["glyphs"]):
             if not d:
                 continue
             a0, a1, d0, d1 = char_window(i, line["n"], m["appear"], m["hold"],
                                         m["dissolve"], m["slot"], ls)
             kt = "%.5f;%.5f;%.5f;%.5f" % (a0 / cycle, a1 / cycle, d0 / cycle, d1 / cycle)
-            out.append(
-                '<path d="%s" fill="%s" filter="url(#glow)">'
+            # opacity 属性是「不支持动画时」的兜底：只显示第一句
+            chars.append(
+                '<path d="%s" fill="%s" filter="url(#glow)" opacity="%d">'
                 '<animate attributeName="opacity" values="0;1;1;0" keyTimes="%s" '
-                'dur="%.3fs" repeatCount="indefinite"/></path>' % (d, color, kt, cycle))
+                'dur="%.3fs" repeatCount="indefinite"/></path>' % (
+                    d, color, 1 if li == 0 else 0, kt, cycle))
+        out.append('<g transform="translate(%.2f,%.2f)">%s</g>' % (
+            line["ox"], line["oy"], "".join(chars)))
         for p in line["parts"]:
             i = p["gi"]
             a0, a1, d0, d1 = char_window(i, line["n"], m["appear"], m["hold"],
@@ -157,7 +162,7 @@ def emit_animated(m):
                     s, pk, e, cycle,
                     p["drift"] * .4, -p["rise"] * .4, p["drift"], -p["rise"],
                     s, e, cycle))
-    return _wrap(m, '<g transform="translate(0,0)">' + "".join(out) + "</g>")
+    return _wrap(m, "".join(out))
 
 
 def emit_snapshot(m, t):
@@ -168,6 +173,7 @@ def emit_snapshot(m, t):
     out = []
     for li, line in enumerate(m["model"]):
         ls = li * m["slot"]
+        chars = []
         for i, d in enumerate(line["glyphs"]):
             if not d or not (ls <= t < ls + m["slot"]):
                 continue
@@ -185,8 +191,10 @@ def emit_snapshot(m, t):
                 op = 0.0
             if op <= 0.01:
                 continue
-            out.append('<path d="%s" fill="%s" filter="url(#glow)" opacity="%.3f" '
-                       'transform="translate(%.2f,%.2f)"/>' % (d, color, op, 0, 0))
+            chars.append('<path d="%s" fill="%s" filter="url(#glow)" opacity="%.3f"/>' % (d, color, op))
+        if chars:
+            out.append('<g transform="translate(%.2f,%.2f)">%s</g>' % (
+                line["ox"], line["oy"], "".join(chars)))
         for p in line["parts"]:
             a0, a1, d0, d1 = char_window(p["gi"], line["n"], m["appear"], m["hold"],
                                         m["dissolve"], m["slot"], ls)
