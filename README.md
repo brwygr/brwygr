@@ -37,10 +37,10 @@
 
 <table>
   <tr>
-    <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/86/b0/9d/86b09d63-367a-563a-1e24-d5d62c220ac8/jacket_SRCL09749B00Z_550.jpg/600x600bb.jpg" width="104" height="104" alt="Lemon"><br><b><a href="https://open.spotify.com/search/Lemon%20%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB">Lemon</a></b><br>米津玄師</td>
-    <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3a/17/eb/3a17eb30-eacb-82eb-51df-d1321dbb55bc/197188492205.jpg/600x600bb.jpg" width="104" height="104" alt="アイドル"><br><b><a href="https://open.spotify.com/search/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%20YOASOBI">アイドル</a></b><br>YOASOBI</td>
-    <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/45/8a/e4/458ae484-dc8b-5683-ce04-8d2948346462/JAY.jpg/600x600bb.jpg" width="104" height="104" alt="晴天"><br><b><a href="https://open.spotify.com/search/%E6%99%B4%E5%A4%A9%20%E5%91%A8%E6%9D%B0%E4%BC%A6">晴天</a></b><br>周杰伦</td>
-    <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e3/e5/7a/e3e57a00-ed2d-69d6-bf00-347d7c37f3bd/PA00074572_0_90261_jacket.jpg/600x600bb.jpg" width="104" height="104" alt="ただ君に晴れ"><br><b><a href="https://open.spotify.com/search/%E3%81%9F%E3%81%A0%E5%90%9B%E3%81%AB%E6%99%B4%E3%82%8C%20%E3%83%A8%E3%83%AB%E3%82%B7%E3%82%AB">ただ君に晴れ</a></b><br>ヨルシカ</td>
+    <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/86/b0/9d/86b09d63-367a-563a-1e24-d5d62c220ac8/jacket_SRCL09749B00Z_550.jpg/600x600bb.jpg" width="104" height="104" alt="Lemon"><br><b><a href="https://music.apple.com/jp/album/lemon/1537460610?i=1537460612">Lemon</a></b><br>米津玄師</td>
+    <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3a/17/eb/3a17eb30-eacb-82eb-51df-d1321dbb55bc/197188492205.jpg/600x600bb.jpg" width="104" height="104" alt="アイドル"><br><b><a href="https://music.apple.com/jp/album/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB/1679278166?i=1679278167">アイドル</a></b><br>YOASOBI</td>
+    <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/45/8a/e4/458ae484-dc8b-5683-ce04-8d2948346462/JAY.jpg/600x600bb.jpg" width="104" height="104" alt="晴天"><br><b><a href="https://music.apple.com/jp/album/%E6%99%B4%E5%A4%A9/1721464893?i=1721464906">晴天</a></b><br>周杰伦</td>
+    <td align="center"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e3/e5/7a/e3e57a00-ed2d-69d6-bf00-347d7c37f3bd/PA00074572_0_90261_jacket.jpg/600x600bb.jpg" width="104" height="104" alt="ただ君に晴れ"><br><b><a href="https://music.apple.com/jp/album/%E3%81%9F%E3%81%A0%E5%90%9B%E3%81%AB%E6%99%B4%E3%82%8C/1648875799?i=1648876333">ただ君に晴れ</a></b><br>ヨルシカ</td>
   </tr>
 </table>
 
