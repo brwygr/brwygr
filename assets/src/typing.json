@@ -1,0 +1,23 @@
+{
+  "lines": [
+    "把 Bug 拦在发布之前。",
+    "质量是设计出来的，不是测出来的。",
+    "自动化一切可以被自动化的。",
+    "我保证我是天使。"
+  ],
+  "font": "youyuan",
+  "font_size": 34,
+  "color": "#FFFFFF",
+  "particle_color": "#FFFFFF",
+  "glow_color": "#22D3EE",
+  "glow_strength": 6,
+  "width": 760,
+  "height": 96,
+  "top": 24,
+  "appear": 0.6,
+  "hold": 1.6,
+  "dissolve": 0.6,
+  "particle_size": 1.6,
+  "max_particles": 90,
+  "seed": 11
+}
