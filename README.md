@@ -77,6 +77,5 @@
 <br/><br/>
 
 <a href="https://github.com/brwygr"><img src="https://img.shields.io/badge/GitHub-brwygr-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-<a href="mailto:your-email@example.com"><img src="https://img.shields.io/badge/Email-Say%20Hi-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email" /></a>
 
 </div>
