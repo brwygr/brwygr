@@ -53,7 +53,7 @@
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=brwygr&show_icons=true&hide_border=true&bg_color=0D1117&title_color=22D3EE&icon_color=A855F7&text_color=C9D1D9&rank_icon=github" alt="GitHub Stats" />
+<img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=brwygr&theme=github_dark" alt="GitHub Stats" />
 <img height="165" src="https://streak-stats.demolab.com?user=brwygr&hide_border=true&background=0D1117&ring=22D3EE&fire=A855F7&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=22D3EE&sideLabels=C9D1D9&dates=8B949E&stroke=30363D" alt="GitHub Streak" />
 
 <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=brwygr&theme=github_dark" alt="Profile Details" />
