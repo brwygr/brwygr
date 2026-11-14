@@ -2,7 +2,7 @@
 
 <img src="./assets/hero.png" width="100%" alt="KI — Software QA Engineer" />
 
-<img src="./assets/typing.svg" width="760" alt="" />
+<img src="./assets/typing.svg" width="760" alt="I guarantee that I am angel — 我保证我是天使" />
 
 </div>
 
